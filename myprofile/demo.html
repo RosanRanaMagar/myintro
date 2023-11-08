@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title></title>
+	<style type="text/css">
+		#abc{
+			margin-top: 0px;
+			margin-left: 150px;
+
+		}
+	</style>
+</head>
+<body style="background-color: #acb524;">
+
+<form>
+	<b>Enter first number:</b>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="1" id="one"><br><br>
+	<b>Enter Second Number:</b>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="1" id="two"><br><br>
+	<b>Total Sum is:</b>
+	<input id="abc">
+	<input type="button" name="" value="PRESS" onclick="sum()">
+	
+
+	<form method="post" action="fourth.html">	
+		<h1>Registration Form</h1> <br> <br>
+		<label>Name: </label>
+		<input type="text" name="name"> <br> <br>
+		<label>Password: </label>
+		<input type="Password" name="pass"> <br> <br>
+		<label>Gender:</label>
+		<input type="radio" name="gender"> Male
+		<input type="radio" name="gender"> female
+		<input type="radio" name="gender"> other <br><br>
+		<label>Phone</label>
+		<input type="phone" name=""> <br> <br>
+		<label>Date of birth</label>
+		<input type="date" name=""> <br> <br>
+		<label>Select your country</label> <br> <br>
+		
+		<input type="time" name="">
+		<input type="file" name="CV">
+		<select>
+			<option>Nepal</option>
+			<option>India</option>
+			<option>China</option>
+		</select> <br> <br>
+		<label>Upload your photo:</label>
+		<input type="file" name="photo">
+		<button>
+			<input type="submit" name="register" value="register">
+		</button>
+	</form>
+
+
+	
+</form>
+<a href="" class="fa fa-facebook"></a>
+</body>
+<script type="text/javascript">
+	
+
+	function sum(){
+		var data=parseInt(document.getElementById("one").value);
+		var data1=parseInt(document.getElementById("two").value);
+		var display = (data + data1);
+		document.getElementById('abc').value=display;
+	}
+
+	/*function printvalue()
+	{
+		var pattern = /^[0-9]+$/;
+		var number = document.getElementById('num').value;
+		if(number.match(pattern))
+		{
+			alert('Your Registration number has accepted....!');
+			document.forml.text.focus();
+			return true;
+		}
+
+	}*/
+</script>
+</html>
+
+
+ 
